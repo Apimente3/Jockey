@@ -18,7 +18,7 @@ const Map = () => {
   return (
     <MapContainer
       center={center}
-      zoom={20}
+      zoom={18}
       scrollWheelZoom={true}
       className="w-[100vw] h-[100vh]"
       zoomControl={false}
@@ -30,11 +30,11 @@ const Map = () => {
         url={piso1}
       /> */}
       <WMSTileLayer
-        layers="jockey:piso1otros"
+        layers="jockey:piso1, jockey:piso1otros"
         url="http://200.121.128.102:8080/geoserver/jockey/wms"
         format="image/png"
         transparent={true}
-        maxZoom={19}
+        maxZoom={18}
       />
       <Marker position={center}>
         <Popup>
